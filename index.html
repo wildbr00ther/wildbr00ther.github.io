@@ -11,21 +11,6 @@
     <script type="text/javascript" src="js/rhinoslider-1.05.min.js"></script>
     <script type="text/javascript" src="js/mousewheel.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.slider').rhinoslider({
-                effect: 'fade',
-                showTime: 8000,
-                effectTime: 300,
-                controlsMousewheel: false,
-                controlsPlayPause: false,
-                animateActive: false,
-                controlFadeTime: 100,
-                showBullets: 'never',
-                showControls: 'always'
-            });
-        });
-    </script>
 </head>
 <body>
 <header>
@@ -44,11 +29,7 @@
 <section class="slider-one-wrap clearfix">
     <div class="container-12">
         <div class="slider-one grid-4 alpha">
-            <div class="slider">
-                <div><img src="img/photos/01-min.png" alt="" class="small-img"></div>
-                <div><img src="img/photos/02-min.png" alt="" class="small-img"></div>
-                <div><img src="img/photos/03-min.png" alt="" class="small-img"></div>
-            </div>
+            <img src="img/photos/01-min.png" alt="" class="small-img">
         </div>
         <div class="slider-content grid-8 omega">
             <h3 class="slider-title">Ателье Эль шьет одежду по индивидуальным меркам</h3>
@@ -64,8 +45,10 @@
     <div class="container-12 clearfix">
         <div class="clothes-left-block grid-8 alpha">
             <img src="img/photos/04-min.png" alt="" class="big-img">
+            <p class="clothes-block-text">Шелковое платье на выпускной для Юлии. Украшение бисером сделаны
+                в ручную, драпированный лиф, юбка солнце в крупную складку.</p>
         </div>
-        <div class="clothes-right-block grid-4 omega">
+        <div class="clothes-right-block right-outer-line grid-4 omega">
             <div class="clothes-top-block">
                 <img src="img/photos/05-min.png" alt="" class="small-img">
             </div>
@@ -87,17 +70,13 @@
             </div>
         </div>
         <div class="slider-two grid-4 omega">
-            <div class="slider">
-                <div><img src="img/photos/07-min.png" alt="" class="small-img"></div>
-                <div><img src="img/photos/08-min.png" alt="" class="small-img"></div>
-                <div><img src="img/photos/09-min.png" alt="" class="small-img"></div>
-            </div>
+            <img src="img/photos/07-min.png" alt="" class="small-img">
         </div>
     </div>
 </section>
 <section class="clothes clothes-two">
     <div class="container-12 clearfix">
-        <div class="clothes-right-block grid-4 alpha">
+        <div class="clothes-right-block left-outer-line grid-4 alpha">
             <div class="clothes-top-block">
                 <img src="img/photos/11-min.png" alt="" class="small-img">
             </div>
@@ -107,24 +86,22 @@
         </div>
         <div class="clothes-left-block grid-8 omega">
             <img src="img/photos/13-min.png" alt="" class="big-img">
+            <p class="clothes-block-text">Ремонт пальто
+                в английском стиле для Надежди. Увеличили
+                в размере, совмещали клетку, постеганный рукав. </p>
         </div>
     </div>
 </section>
 <section class="slider-three-wrap clearfix">
     <div class="container-12">
         <div class="slider-three grid-4 alpha">
-            <div class="slider">
-                <div><img src="img/photos/14-min.png" alt="" class="small-img"></div>
-                <div><img src="img/photos/15-min.png" alt="" class="small-img"></div>
-                <div><img src="img/photos/16-min.png" alt="" class="small-img"></div>
-            </div>
+            <img src="img/photos/14-min.png" alt="" class="small-img">
         </div>
         <div class="slider-content grid-8 omega">
-            <h3 class="slider-title">Ателье Эль шьет одежду по индивидуальным меркам</h3>
-            <div class="slider-text">Ателье Эль шьет одежду по индивидуальным меркам. Наряд на заказ добавит
-                привлекательности и сделает
-                вас счастливее. Еще мы работаем с мехом и кожей,
-                ремонтируем одежду, принимаем массовку.
+            <h3 class="slider-title">Грамотно сшитая вещь</h3>
+            <div class="slider-text">Грамотно сшитая вещь скрывает недостатки фигуры
+                и подчеркивает достоинства. Больше фотографий
+                с рассказами о сделанных нарядах в инстаграме.
             </div>
         </div>
     </div>
@@ -133,8 +110,9 @@
     <div class="container-12 clearfix">
         <div class="clothes-left-block grid-8 alpha">
             <img src="img/photos/17-min.png" alt="" class="big-img">
+            <p class="clothes-block-text">Вечерние платье для Гульнары из натурального шелка. Тонкая работа с материалом, спинка и чать полочки на подкладне.</p>
         </div>
-        <div class="clothes-right-block grid-4 omega">
+        <div class="clothes-right-block right-outer-line grid-4 omega">
             <div class="clothes-top-block">
                 <img src="img/photos/18-min.png" alt="" class="small-img">
             </div>
@@ -148,14 +126,17 @@
     <div class="container-12 clearfix">
         <div class="clothes-left-block grid-8 alpha">
             <div class="grid-4 alpha omega">
-                <p class="small-img">тут текстз</p>
+                <div class="small-img">
+                    <p class="clothes-row-text">Спортивная куртка из плащевки для Елены. Продуманна до мельчайших деталей, теплый стеганный трикотаж, 6 карманов, манжеты на резиночке, капюшон.
+                    </p>
+                </div>
             </div>
             <div class="grid-4 alpha omega bg-border">
                 <img src="img/photos/20-min.png" alt="" class="small-img">
             </div>
         </div>
         <div class="clothes-right-block grid-4 omega">
-            <div class="clothes-top-block">
+            <div class="">
                 <img src="img/photos/21-min.png" alt="" class="small-img">
             </div>
         </div>
@@ -163,7 +144,7 @@
 </section>
 <section class="clothes clothes-five">
     <div class="container-12 clearfix">
-        <div class="clothes-right-block grid-4 alpha">
+        <div class="clothes-right-block left-outer-line grid-4 alpha">
             <div class="clothes-top-block">
                 <img src="img/photos/22-min.png" alt="" class="small-img">
             </div>
@@ -173,6 +154,10 @@
         </div>
         <div class="clothes-left-block grid-8 omega">
             <img src="img/photos/24-min.png" alt="" class="big-img">
+            <p class="clothes-block-text">Сарафан из плотного хлопка для Елены. Юбка
+                в складку, карманы в боковом шве,
+                на спине лямки крест-накрест.
+            </p>
         </div>
     </div>
 </section>
@@ -188,7 +173,13 @@
                 <img src="img/photos/27-min.png" alt="" class="small-img">
             </div>
             <div class="grid-4 alpha omega bg-border">
-                <p class="small-img">тут текстз</p>
+                <div class="small-img">
+                    <p class="clothes-row-text">Бомбер с трикотажного полотна для Елены. Разработан и сшит
+                        с нуля. Молния нашита на лицевую сторону
+                        и закрыта киперкой, спина из шелка
+                        на подкладне.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -199,8 +190,8 @@
     </div>
     <div class="container-12 clearfix">
         <div class="social-buttons">
-            <div class="grid-4"><a href="" class="vk">Вконтакте</a></div>
-            <div class="grid-4 alpha"><a href="" class="instagram">Инстаграм</a></div>
+            <div class="grid-4 alpha"><a href="" class="vk">Вконтакте</a></div>
+            <div class="grid-4"><a href="" class="instagram">Инстаграм</a></div>
             <div class="grid-4 omega"><a href="" class="fb">Фейсбук</a></div>
         </div>
     </div>
@@ -225,11 +216,18 @@
                 </div>
             </div>
         </div>
-        <div class="map-wrap grid-8 omega"></div>
+        <div class="map-wrap grid-8 omega">
+            <script type="text/javascript"
+                    charset="utf-8"
+                    async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor:f3d4f6b57dc5ea0605de305598e26888898cd472d7ef97ab9987437cb7500f41&amp;width=780&amp;height=467&amp;lang=ru_RU&amp;scroll=true">
+
+            </script>
+        </div>
     </div>
 </section>
 <footer>
-    <div class="header  container-12 clearfix">
+    <div class="header container-12 clearfix">
         <div class="logo grid-3 alpha">
             <a href="#"><img src="img/logo.png" alt=""></a>
         </div>

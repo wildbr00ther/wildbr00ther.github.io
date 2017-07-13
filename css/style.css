@@ -3,9 +3,11 @@ body {
   background: #fffdf5;
   color: #000000;
   font-family: "LatoRegular", sans-serif;
+  overflow-x: hidden;
+  letter-spacing: 1.5px;
 }
 .container-12 {
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto 20px auto;
   background: #fffdf5;
 }
@@ -79,6 +81,27 @@ section {
   height: 0;
   clear: both;
   visibility: hidden;
+}
+.right-outer-line,
+.left-outer-line {
+  position: relative;
+}
+.right-outer-line:after,
+.left-outer-line:after {
+  content: '';
+  width: 200%;
+  height: 20px;
+  background: #fffdf5;
+  display: block;
+  position: absolute;
+  top: 380px;
+  right: -420px;
+}
+.right-outer-line:after {
+  right: -420px;
+}
+.left-outer-line:after {
+  left: -420px;
 }
 .header {
   padding: 60px 0 40px 0;
@@ -174,7 +197,7 @@ section {
   background: #fbefcc;
 }
 .slider-three-wrap {
-  background: #fbefcc;
+  background-color: #fceacd;
 }
 .clothes div {
   line-height: 0;
@@ -185,14 +208,82 @@ section {
 .clothes .bg-border {
   border-right: 20px solid;
 }
+.clothes .clothes-block-text {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  padding: 40px 35px 40px 25px;
+  font-family: "LatoItalic", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 26px;
+  opacity: 0.9;
+  bottom: 30px;
+}
+.clothes div.small-img {
+  padding: 40px 35px 40px 25px;
+  height: 300px;
+}
+.clothes .clothes-row-text {
+  display: inline-block;
+  width: 300px;
+  height: 260px;
+  padding: 40px 25px 0 25px;
+  font-family: "LatoItalic", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+}
 .clothes-one {
   background: #fdd9d4;
+}
+.clothes-one .clothes-block-text {
+  background-color: #fff1ef;
+  right: 30px;
 }
 .clothes-two {
   background: #f9e0cf;
 }
+.clothes-two .clothes-block-text {
+  background-color: #faede4;
+  left: 30px;
+}
 .clothes-three {
-  background: #f9e0cf;
+  background-color: #eccefa;
+}
+.clothes-three .clothes-block-text {
+  background-color: #eedef9;
+  right: 30px;
+}
+.clothes-four {
+  background: #ffe2f1;
+}
+.clothes-four .bg-border {
+  border-color: #ffe2f1;
+}
+.clothes-four div.small-img {
+  background: #ffe2f1;
+}
+.clothes-four .clothes-row-text {
+  background-color: #ffeaf5;
+}
+.clothes-five {
+  background: #efd0f7;
+}
+.clothes-five .clothes-block-text {
+  background-color: #eedef9;
+  left: 30px;
+}
+.clothes-six {
+  background: #ffe0c3;
+}
+.clothes-six .bg-border {
+  border-color: #ffe0c3;
+}
+.clothes-six div.small-img {
+  background: #ffe0c3;
+}
+.clothes-six .clothes-row-text {
+  background-color: #fdedd2;
 }
 .contacts-block {
   background: #ffffff;
