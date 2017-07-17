@@ -181,6 +181,7 @@ section {
   padding: 50px 0;
 }
 .slider-content .slider-title {
+  font-family: "LatoMedium", sans-serif;
   font-size: 30px;
   line-height: 45px;
   text-transform: uppercase;
@@ -190,14 +191,107 @@ section {
   font-size: 24px;
   line-height: 36px;
 }
+.slider-content .instagram {
+  display: block;
+  position: relative;
+  border-radius: 5px;
+  background: #fcfaf2;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #010101;
+  line-height: 70px;
+}
+.slider-content .instagram:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -50px -5px;
+  width: 30px;
+  height: 30px;
+  left: 50px;
+  top: 20px;
+}
+.slider-content .instagram:hover {
+  box-shadow: 0 0 15px rgba(158, 139, 108, 0.3);
+  background-color: #fcfaf2;
+}
+.slider-content .instagram:active {
+  box-shadow: inset 0 3px 10px 1px rgba(54, 52, 50, 0.2);
+  background-color: #f4f1e6;
+}
 .slider-one-wrap {
-  background: #f6e3ff;
+  background: #fde4ff;
+}
+.slider-one-wrap .slider-hover-text {
+  display: none;
+  width: 300px;
+  height: 300px;
+  background: rgba(249, 239, 253, 0.7);
+}
+.slider-one-wrap .slider-hover-text p {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 20px;
+  font-size: 20px;
+  font-family: "LatoItalic", sans-serif;
+  line-height: 26px;
+}
+.slider-one-wrap .slider-one:hover .slider-hover-text {
+  display: table;
+  position: absolute;
+  left: 40px;
+  top: 40px;
 }
 .slider-two-wrap {
   background: #fbefcc;
 }
+.slider-two-wrap .slider-hover-text {
+  display: none;
+  width: 300px;
+  height: 300px;
+  background: rgba(250, 245, 236, 0.7);
+}
+.slider-two-wrap .slider-hover-text p {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 20px;
+  font-size: 20px;
+  font-family: "LatoItalic", sans-serif;
+  line-height: 26px;
+}
+.slider-two-wrap .slider-two:hover .slider-hover-text {
+  display: table;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
 .slider-three-wrap {
-  background-color: #fceacd;
+  background-color: #ffebce;
+}
+.slider-three-wrap .slider-hover-text {
+  display: none;
+  width: 300px;
+  height: 300px;
+  background: rgba(251, 238, 218, 0.7);
+}
+.slider-three-wrap .slider-hover-text p {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 20px;
+  font-size: 20px;
+  font-family: "LatoItalic", sans-serif;
+  line-height: 26px;
+}
+.slider-three-wrap .slider-three:hover .slider-hover-text {
+  display: table;
+  position: absolute;
+  left: 40px;
+  top: 40px;
 }
 .clothes div {
   line-height: 0;
@@ -209,10 +303,10 @@ section {
   border-right: 20px solid;
 }
 .clothes .clothes-block-text {
+  display: table;
   position: absolute;
-  width: 200px;
-  height: auto;
-  padding: 40px 35px 40px 25px;
+  width: 260px;
+  height: 280px;
   font-family: "LatoItalic", sans-serif;
   font-size: 20px;
   font-style: italic;
@@ -220,42 +314,51 @@ section {
   opacity: 0.9;
   bottom: 30px;
 }
+.clothes .clothes-block-text p {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 25px;
+}
 .clothes div.small-img {
   padding: 40px 35px 40px 25px;
   height: 300px;
 }
 .clothes .clothes-row-text {
-  display: inline-block;
+  display: table;
   width: 300px;
-  height: 260px;
-  padding: 40px 25px 0 25px;
+  height: 300px;
   font-family: "LatoItalic", sans-serif;
   font-size: 20px;
   line-height: 26px;
 }
+.clothes .clothes-row-text p {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 20px;
+}
 .clothes-one {
-  background: #fdd9d4;
+  background: #ffdad5;
 }
 .clothes-one .clothes-block-text {
   background-color: #fff1ef;
   right: 30px;
 }
 .clothes-two {
-  background: #f9e0cf;
+  background: #ffe0d0;
 }
 .clothes-two .clothes-block-text {
   background-color: #faede4;
   left: 30px;
 }
 .clothes-three {
-  background-color: #eccefa;
+  background-color: #f7cffc;
 }
 .clothes-three .clothes-block-text {
   background-color: #eedef9;
   right: 30px;
 }
 .clothes-four {
-  background: #ffe2f1;
+  background: #ffe1f0;
 }
 .clothes-four .bg-border {
   border-color: #ffe2f1;
@@ -287,6 +390,7 @@ section {
 }
 .contacts-block {
   background: #ffffff;
+  margin-bottom: 0;
 }
 .contacts-block .container-12 {
   background: #ffffff;
@@ -321,7 +425,7 @@ section {
   background-position: -50px -5px;
   width: 30px;
   height: 30px;
-  left: 86px;
+  left: 80px;
   top: 23px;
 }
 .contacts-block .social-buttons a.vk:before {
@@ -355,4 +459,13 @@ section {
   display: inline-block;
   font-size: 30px;
   line-height: 58px;
+}
+.contacts-block .container-12:last-child {
+  margin-bottom: 0;
+}
+footer,
+footer .container-12 {
+  background: #ffffff;
+  margin-bottom: 0;
+  padding: 30px 0;
 }
