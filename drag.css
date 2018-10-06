@@ -1,0 +1,120 @@
+.drag {
+    position: absolute;
+    z-index: 100;
+}
+
+body {
+    overflow: hidden;
+    cursor: url("img/hand.png"), url("img/hand.cur"), default;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+
+.li-01s {
+    background: #ededed;
+}
+
+.body-01s {
+    width: 860px;
+    height: 1065px;
+    background: url("img/01s/bg.png") no-repeat center;
+}
+
+.li-02f {
+    background: #ffe343;
+}
+
+.body-02f {
+    width: 860px;
+    height: 1065px;
+}
+
+.li-03x {
+    background: #ffffff;
+}
+
+.body-03x {
+    width: 860px;
+    height: 1065px;
+}
+
+.li-04z {
+    background: #4c4c4c;
+}
+
+.body-04z {
+    width: 837px;
+    height: 1065px;
+    background: url("img/04z/bg.png") no-repeat center;
+}
+
+.li-05r {
+    background: #ffffff;
+}
+
+.body-05r {
+    width: 860px;
+    height: 1065px;
+}
+
+.li-06g {
+    background: #212121;
+}
+
+.body-06g {
+    width: 860px;
+    height: 1065px;
+}
+
+.li-07q {
+    background: #ffffff;
+}
+
+.body-07q {
+    width: 860px;
+    height: 1065px;
+}
+
+.slides li {
+    height: 2000px;
+}
+
+.flex-direction-nav a {
+    height: 200px;
+    top: 340px;
+    opacity: 0.5;
+    cursor: url("img/hand.png"), url("img/hand.cur"), default;
+}
+
+.flex-direction-nav a:hover {
+    opacity: 1;
+}
+
+.flex-direction-nav .flex-prev {
+    width: 140px;
+    left: 14%;
+}
+
+.flex-direction-nav .flex-next {
+    width: 175px;
+    right: 10%;
+}
+
+.flex-direction-nav a:before {
+    content: '';
+    width: 140px;
+    height: 198px;
+    background: url("img/left.png") no-repeat;
+}
+
+.flex-direction-nav a.flex-next:before {
+    content: '';
+    width: 175px;
+    height: 199px;
+    background: url("img/right.png") no-repeat;
+}
